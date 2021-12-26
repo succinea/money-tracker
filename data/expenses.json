@@ -1,0 +1,54 @@
+{
+  "expenses": [
+    {
+      "id": 1,
+      "type": "Debit",
+      "amount": "10,000.00",
+      "category": "Shopping",
+      "source": "Credit Card",
+      "comments": "@Decathlon",
+      "summary": "Bought a bicycle",
+      "timestamp": "23-Dec-21 11:34:01"
+    },
+    {
+      "id": 2,
+      "type": "Debit",
+      "amount": "200.00",
+      "category": "Shopping",
+      "source": "Credit Card",
+      "comments": "@Shoppee",
+      "summary": "Bought a smart watch",
+      "timestamp": "20-Dec-21 18:14:10"
+    },
+    {
+      "id": 3,
+      "type": "Credit",
+      "amount": "5,078.00",
+      "category": "Salary",
+      "source": "POSB Account",
+      "comments": "@Ocbc",
+      "summary": "Salary for month of Dec'21",
+      "timestamp": "15-Dec-21 00:34:01"
+    },
+    {
+      "id": 4,
+      "type": "Credit",
+      "amount": "1000.00",
+      "category": "Rent",
+      "source": "OCBC Account",
+      "comments": "@fromTenant",
+      "summary": "Rent for Dec'21",
+      "timestamp": "01-Dec-21 01:34:01"
+    },
+    {
+      "type": "debit",
+      "source": "Credit Card",
+      "amount": "19.47",
+      "category": "Transport",
+      "summary": "Grab taxi to ECP",
+      "comments": "To ECP get together",
+      "currentTimestamp": "26/12/2021, 10:18:51",
+      "id": 5
+    }
+  ]
+}
