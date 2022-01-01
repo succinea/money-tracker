@@ -1,17 +1,29 @@
-const Navbar = () => {
-    return (
-      <nav className="navbar">
-        <h1>Expenses Tracking System</h1>
-        <div className="links">
-          <a href="/">Home</a>
-          <a href="/create" style={{ 
-            color: 'white', 
-            backgroundColor: '#f1356d',
-            borderRadius: '8px' 
-          }}>New Expense</a>
-        </div>
-      </nav>
-    );
-  }
-   
-  export default Navbar;
+import { Link } from "react-router-dom";
+
+const Navbar = ({ isAuthenticated, callback }) => {
+  return (
+    <nav className="navbar">
+      <h1>Money Tracker</h1>
+      <div className="links">
+        {isAuthenticated ? (
+          <>
+            <Link to="/">Dashboard</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/settings">Settings</Link>
+          </>
+        ) : (
+          ""
+        )}
+        <button
+          onClick={() => {
+            callback();
+          }}
+        >
+          {isAuthenticated ? "Log Out" : "Log In"}
+        </button>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

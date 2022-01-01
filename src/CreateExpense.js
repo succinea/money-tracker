@@ -45,8 +45,8 @@ const CreateExpense = () => {
             <form onSubmit={handleSubmit}>
                 <label>Type</label>
                 <select value={type} onChange={(e) => {setType(e.target.value)}}>
-                    <option value="credit">Credit</option>
-                    <option value="debit">Debit</option>
+                    <option value="Credit">Credit</option>
+                    <option value="Debit">Debit</option>
                 </select>
                 <label>Source</label>
                 <input required type="text" value={source} onChange={(e) => {setSource(e.target.value)}}></input>

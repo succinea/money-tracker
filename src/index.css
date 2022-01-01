@@ -36,26 +36,27 @@
 
 /* blog previews / list */
 .expense-preview {
-  padding: 25px;
+  max-width: 300px;
+  padding: 15px;
   margin: 10px 0;
   border-bottom: 1px solid #fafafa;
 }
 .expense-preview:hover {
   box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
 }
-.expense-preview h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 8px;
+.expense-preview h3 {
+  font-size: 15px;
+  color: #667fad;
+  margin-bottom: 3px;
   float: left;
 }
 .minus {
-  font-size: 20px;
+  font-size: 15px;
   color: #f51403;
   float: right;
 }
 .plus {
-  font-size: 20px;
+  font-size: 15px;
   color: #158a0be3;
   float: right;
 }
@@ -65,6 +66,7 @@
 
 /* expense details page */
 .expense-details h2 {
+  max-width: 300px;
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 10px;
@@ -80,6 +82,36 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.links button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.expenses-list-header {
+  max-width: 300px;
+  margin-bottom: 30px;
+  border: 1px solid
+}
+
+.expenses-list-header h2 {
+  font-size: 20px;
+  color: #f1356d;
+  float: left
+}
+/* Link Button */
+.expenses-list-header div  { 
+  color: white;
+  background-color: #f1356d;
+  border-radius: 8px;
+  text-decoration: none;
+  float: right
+}
+
 /* create new expense form */
 .create-expense {
   max-width: 400px;
@@ -121,4 +153,60 @@
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 30px;
+}
+
+/*account summary */
+.account-summary {
+  max-width: 250px;
+  padding: 15px;
+ 
+  margin-bottom: 300px;
+  margin-left: 50px;
+  border: 1px solid #f1356d;
+  float: right
+}
+.account-summary h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.account-summary p {
+  font-size: 15px;
+  color: #f1356d;
+  margin-bottom: 10px;
+  float: left
+}
+.summary-minus {
+  font-size: 15px;
+  color: #f51403;
+  float: right;
+  margin-bottom: 10px;
+}
+.summary-plus {
+  font-size: 15px;
+  color: #158a0be3;
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* profile */
+.profile {
+  text-align: center;
+  max-width: 300px;
+}
+.profile img {
+  position: absolute;
+}
+.profile h2 {
+  position: relative;
+  left: 70%;
+  padding-top: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.profile p {
+  position: relative;
+  left: 60%;
+  font-size: 14px;
+  margin-left: 10px;
 }
